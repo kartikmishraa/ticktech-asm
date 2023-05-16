@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Route
-app.use("/api/user", require("./Routes/userRoute"));
+app.use("/api/users", require("./Routes/userRoute"));
 
 app.listen(PORT, () => {
   console.log(`server running at port: ${PORT}`);
