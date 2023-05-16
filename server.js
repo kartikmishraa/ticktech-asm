@@ -1,6 +1,6 @@
 const express = require("express");
-const errorHandler = require("./Middleware/errorHandler");
-const { errorMiddleware } = require("./Middleware/errorMiddleware");
+const errorHandler = require("./middlewares/errorHandler");
+const { errorMiddleware } = require("./middlewares/errorMiddleware");
 const dotenv = require("dotenv").config();
 
 const app = express();

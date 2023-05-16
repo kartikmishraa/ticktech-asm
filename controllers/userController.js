@@ -1,8 +1,8 @@
 // const { v4: uuidv4 } = require("uuid");
 const uuid = require("uuid");
 const uuidv4 = uuid.v4;
-const asyncHandler = require("../Middleware/asyncHandler");
-const User = require("../Models/user");
+const asyncHandler = require("../middlewares/asyncHandler");
+const User = require("../models/user");
 
 let users = [
   {
