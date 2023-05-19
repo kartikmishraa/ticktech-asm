@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Route
-app.use("/api/users", require("./Routes/userRoute"));
+app.use("/api/users", require("./routes/userRoute"));
 
 // Error Handler and Middleware
 app.use(errorHandler);

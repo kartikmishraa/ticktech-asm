@@ -123,7 +123,7 @@ const deleteUser = asyncHandler(async (req, res) => {
   // Delete user
   else {
     users.splice(userIndex, 1);
-    res.status(204);
+    res.status(204).JSON();
   }
 });
 

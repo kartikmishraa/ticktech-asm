@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "nodemon server.js",
+    "start:prod": "npm run build && node dist/server.js",
+    "build": "esbuild server.js --bundle --minify --platform=node --target=node18 --outdir=dist",
     "start": "node server.js"
   },
   "author": "Kartik Mishra",
@@ -16,6 +18,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "esbuild": "^0.17.19",
     "nodemon": "^2.0.22"
   }
 }
