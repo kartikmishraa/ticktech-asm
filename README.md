@@ -1,5 +1,7 @@
 User API implemented using Node.js, Express, and an in-memory database. It provides endpoints for creating, reading, updating, and deleting user records. The application follows the MVC (Model-View-Controller) pattern to achieve modularity and separation of concerns.
 
+The API is hosted and can be accessed through the endpoint: **http://3.111.58.148/api/users**
+
 ## Features
 
 - Create a new user record by sending a `POST` request to `/api/users`
@@ -19,22 +21,23 @@ User API implemented using Node.js, Express, and an in-memory database. It provi
    ```bash
    git clone https://github.com/kartikmishraa/ticktech-asm/
    ```
-   
+
 2. Install the dependencies:
 
-  ```bash
-   cd ticktech-asm
-   npm install
-   ```
+```bash
+ cd ticktech-asm
+ npm install
+```
 
 3. Start the application in development mode:
 
-  ```bash
-  npm run start:dev
-  ```
+```bash
+npm run start:dev
+```
+
 4. The API will be available at **http://localhost:5000**
 
-## Project Structure 
+## Project Structure
 
 The project is structured using the MVC pattern for better modularity and maintainability. Here's an overview of the directory structure:
 
@@ -45,7 +48,9 @@ The project is structured using the MVC pattern for better modularity and mainta
 - middlewares/: Contains custom middleware modules used for error handling and handling asynchronous operations.
 
 ## Error Handling
+
 The application uses custom error handling middleware to handle errors that occur during the processing of requests. Errors are properly formatted and returned as JSON responses with the corresponding status codes. The middleware also ensures that error messages are human-friendly and do not expose sensitive information in a production environment.
 
 ## Testing
+
 To be implemented
